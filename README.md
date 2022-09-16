@@ -13,3 +13,5 @@
   * Glide
   
 > Данные приложение получает данный с https://newsapi.org/
+
+<img src= "https://github.com/evgenkr47/News/raw/master/img/newsscreen1.jpg" width="200" /> <img src= "https://github.com/evgenkr47/News/raw/master/img/newsscreen2.jpg" width="200" /> <img src= "https://github.com/evgenkr47/News/raw/master/img/newsscreen3.jpg" width="200" /> <img src= "https://github.com/evgenkr47/News/raw/master/img/newsscreen4.jpg" width="200" />

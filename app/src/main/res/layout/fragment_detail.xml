@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.detail.DetailFragment">
 
@@ -18,36 +17,17 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/background">
+            >
 
             <ImageView
                 android:id="@+id/header_image"
+                android:scaleType="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/icon_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="9dp"
-                android:layout_marginBottom="27dp"
-                android:src="@drawable/ic_arrow_back"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <ImageView
-                android:id="@+id/icon_favorite"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="27dp"
-                android:src="@drawable/ic_favorite"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -58,6 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/aalbionicbold"
         android:layout_marginHorizontal="17dp"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -73,7 +54,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:layout_marginHorizontal="13dp"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        android:fontFamily="@font/aalbionicbold"
         android:textStyle="bold"
         android:textColor="@color/grayBlack"
         android:text="@string/description"
@@ -85,21 +67,24 @@
         android:id="@+id/article_details_decription_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14sp"
         android:layout_marginHorizontal="13dp"
-        android:textSize="12sp"
-        android:textColor="@color/grayBlack"
+
+        android:layout_marginTop="14sp"
+        android:fontFamily="monospace"
         android:lineHeight="19dp"
-        tools:text="Recently, Twitter announced that it has entered into a definitive agreement to be acquired by an entity wholly owned by Musk for $54.20 per share in cash in a transaction valued at nearly $44 billion."
-        app:layout_constraintTop_toBottomOf="@id/article_details_decription_title"
+        android:textColor="@color/grayBlack"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/article_details_decription_title"
+        tools:text="Recently, Twitter announced that it has entered into a definitive agreement to be acquired by an entity wholly owned by Musk for $54.20 per share in cash in a transaction valued at nearly $44 billion." />
 
     <Button
         android:id="@+id/article_details_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:backgroundTint="#90000000"
         android:text="@string/visit_site"
         app:layout_constraintTop_toBottomOf="@id/article_details_decription_text"
         app:layout_constraintStart_toStartOf="parent"

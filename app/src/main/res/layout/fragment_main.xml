@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.main.MainFragment">
 
@@ -13,6 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/news"
         android:textStyle="bold"
+        android:fontFamily="@font/aalbionicbold"
         android:paddingTop="30dp"
         android:textColor="@color/grayBlack"
         android:textSize="40sp"
@@ -26,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/popular_news"
+        android:fontFamily="@font/aalbionicbold"
         android:layout_marginTop="42dp"
         android:layout_marginHorizontal="16dp"
         android:textColor="@color/grayBlack"

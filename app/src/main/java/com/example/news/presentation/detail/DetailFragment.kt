@@ -3,15 +3,13 @@ package com.example.news.presentation.detail
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.URLUtil
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.viewModels
-import androidx.navigation.findNavController
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.news.R
@@ -23,7 +21,7 @@ class DetailFragment : Fragment() {
     private var _binding: FragmentDetailBinding ?= null
     private val binding get() = _binding!!
     private val bundleArgs: DetailFragmentArgs by navArgs()
-    private val viewModel by viewModels<DetailViewModel>()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,11 +37,12 @@ class DetailFragment : Fragment() {
 
         articleArg.let { article ->
             article.urlToImage.let {
-                Glide.with(this).load(article.urlToImage).into(binding.headerImage)
+                Glide.with(this).load(article.urlToImage).placeholder(R.drawable.newspapper).into(binding.headerImage)
             }
             binding.headerImage.clipToOutline = true
             binding.articleDetailsTitle.text = article.title
             binding.articleDetailsDecriptionText.text = article.description
+
 
             binding.articleDetailsButton.setOnClickListener {
                 try {
@@ -62,9 +61,7 @@ class DetailFragment : Fragment() {
                 }
             }
 
-            binding.iconFavorite.setOnClickListener {
-                viewModel.saveFavoriteArticle(article)
-            }
+
         }
     }
 

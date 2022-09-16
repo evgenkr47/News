@@ -6,17 +6,23 @@
         <entry key="..\:/News/app/src/main/res/drawable/background.xml" value="0.164" />
         <entry key="..\:/News/app/src/main/res/drawable/background2.xml" value="0.164" />
         <entry key="..\:/News/app/src/main/res/drawable/backgroundsplash.xml" value="0.164" />
+        <entry key="..\:/News/app/src/main/res/drawable/black_background.xml" value="0.164" />
+        <entry key="..\:/News/app/src/main/res/drawable/black_background_for_item.xml" value="0.164" />
+        <entry key="..\:/News/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.164" />
         <entry key="..\:/News/app/src/main/res/drawable/button_color.xml" value="0.164" />
         <entry key="..\:/News/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1" />
         <entry key="..\:/News/app/src/main/res/drawable/ic_favorite.xml" value="0.164" />
+        <entry key="..\:/News/app/src/main/res/drawable/ic_home.xml" value="0.164" />
+        <entry key="..\:/News/app/src/main/res/drawable/ic_search.xml" value="0.164" />
+        <entry key="..\:/News/app/src/main/res/drawable/ic_share.xml" value="0.164" />
         <entry key="..\:/News/app/src/main/res/drawable/main_img_bg.xml" value="0.164" />
         <entry key="..\:/News/app/src/main/res/layout-v28/fragment_detail.xml" value="0.1875" />
         <entry key="..\:/News/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/News/app/src/main/res/layout/fragment_detail.xml" value="0.1875" />
+        <entry key="..\:/News/app/src/main/res/layout/fragment_detail.xml" value="0.33" />
         <entry key="..\:/News/app/src/main/res/layout/fragment_favorite.xml" value="0.1875" />
-        <entry key="..\:/News/app/src/main/res/layout/fragment_main.xml" value="0.1875" />
-        <entry key="..\:/News/app/src/main/res/layout/fragment_search.xml" value="0.1875" />
-        <entry key="..\:/News/app/src/main/res/layout/fragment_splash.xml" value="0.1875" />
+        <entry key="..\:/News/app/src/main/res/layout/fragment_main.xml" value="0.33" />
+        <entry key="..\:/News/app/src/main/res/layout/fragment_search.xml" value="0.33" />
+        <entry key="..\:/News/app/src/main/res/layout/fragment_splash.xml" value="0.2" />
         <entry key="..\:/News/app/src/main/res/layout/item_article.xml" value="0.25" />
         <entry key="..\:/News/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1875" />
       </map>

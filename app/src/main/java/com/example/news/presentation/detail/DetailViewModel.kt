@@ -23,7 +23,5 @@ class DetailViewModel @Inject constructor(private val repository: NewsRepository
         repository.getFavoriteArticles()
     }
 
-    fun saveFavoriteArticle(article: Article) = viewModelScope.launch(Dispatchers.IO) {
-        repository.addToFavorite(article = article)
-    }
+
 }

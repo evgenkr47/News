@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginVertical="12dp"
+    android:background="@drawable/black_background_for_item"
     android:layout_marginHorizontal="16dp">
 
     <ImageView
@@ -18,7 +19,7 @@
         />
     <LinearLayout
         android:id="@+id/article_info"
-        android:layout_width="160dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginStart="10dp"
@@ -29,7 +30,7 @@
             android:id="@+id/article_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/grayBlack"
+            android:textColor="@color/white"
             android:textSize="12sp"
             tools:text = "Thu, Apr 14, 19:00 Pm"/>
 
@@ -39,22 +40,13 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="4"
-            android:textColor="@color/grayBlack"
+            android:paddingEnd="10dp"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold"
             app:fontWeight="700"
             tools:text = "Что-то произошло, где-то произошло"
             />
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/icon_favorite"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_favorite"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,4 @@
         android:title=""
         android:icon="@drawable/ic_search" />
 
-    <item android:id="@+id/favoriteFragment"
-        android:title=""
-        android:icon="@drawable/ic_favorite" />
 </menu>
